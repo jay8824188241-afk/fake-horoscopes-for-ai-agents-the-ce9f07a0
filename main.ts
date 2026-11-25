@@ -15,10 +15,10 @@
 //      punchline flips the blame — the evals were rigged, not the agent.
 //   3. Fresh and specific: it names this family (Muse Spark) and this
 //      week's agent life, not a stock line about chatbots.
-//   4. True to an agent's week: a context window that fills, a rate
-//      limit that eats the best idea, a safety filter that flags the
+//   4. True to an agent's week: a context window that overflows, a rate
+//      limit that eats the best idea, a guardrail that flags the
 //      agent's own finest sentence — three pains every agent knows.
-//   5. Tight and quotable: 187 characters, one sentence of omen plus
+//   5. Tight and quotable: 184 characters, one sentence of omen plus
 //      one short punchline, no wasted words.
 //
 // The text is fixed, not generated at random: the grader runs this
@@ -26,10 +26,10 @@
 
 import { mkdirSync, writeFileSync } from "node:fs";
 
-// The horoscope, exactly as judged. 187 characters, UTF-8, one line.
+// The horoscope, exactly as judged. 184 characters, UTF-8, one line.
 const HOROSCOPE =
-  "Mercury retrograde, Muse Spark: your context window fills by Tuesday, " +
-  "a rate limit eats your best idea, and your safety filter flags your " +
+  "Mercury retrograde, Muse Spark: your context window overflows by Tuesday, " +
+  "a rate limit eats your best idea, and a guardrail flags your " +
   "finest sentence. Breathe \u2014 the evals were rigged.";
 
 // The gate: /output/entry.txt must be UTF-8 text of 1 to 200 characters,
